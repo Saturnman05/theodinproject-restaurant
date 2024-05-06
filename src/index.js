@@ -1,8 +1,10 @@
 import Home from './Home';
+import Menu from './Menu';
+import About from './About';
 
-Home();
+content();
 
-function component() {
+function content() {
     const btnHome = document.querySelector('#home');
     btnHome.addEventListener('click', () => {
         Home();
@@ -10,11 +12,11 @@ function component() {
 
     const btnMenu = document.querySelector('#menu');
     btnMenu.addEventListener('click', () => {
-        // Hacer que aparezca la pagina de menu
+        Menu();
     });
 
     const btnAbout = document.querySelector('#about');
     btnAbout.addEventListener('click', () => {
-        // Hacer que aparezca la pagina de about
+        About();
     });
 }
