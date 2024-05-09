@@ -20,3 +20,7 @@ div {
     text-align: left;
     padding: 10px; 
 }
+
+img {
+    max-width: 400px;
+}
