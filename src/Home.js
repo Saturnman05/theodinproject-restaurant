@@ -1,15 +1,12 @@
-function createParagraph(text) {
-    const paragraph = document.createElement('p');
-    paragraph.innerText = text;
-    return paragraph;
-}
+import createParagraph from "./createParagraph";
 
 function Home() {
     const content = document.querySelector('#content');
     content.innerHTML = '';
 
-    const firstParagraph = createParagraph('Welcome to Pizza Mania Restaurnant.');
-    content.appendChild(firstParagraph);
+    const h2 = document.createElement('h2');
+    h2.innerText = 'Welcome to Pizza Mania Restaurnant.'
+    content.appendChild(h2);
 
     const secondParagraph = createParagraph('Discover the authentic taste of Italy in every bite. At Delicious Flavor Pizzeria, we strive to bring you the freshest and most flavorful pizzas, prepared with the highest quality ingredients and cooked to perfection in our traditional stone oven. From our classic pepperoni pizzas to our unique gourmet creations, each slice is a culinary experience that will transport you to the streets of Naples.');
     content.appendChild(secondParagraph);
